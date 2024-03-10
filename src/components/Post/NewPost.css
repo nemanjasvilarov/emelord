@@ -1,0 +1,81 @@
+.new-post-section {
+  width: 100vw;
+  height: 80vh;
+  margin: auto;
+}
+
+.new-post-form {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #c23373, #d53a9d);
+  border-style: solid;
+  border-width: 1px 9px 6px 3px;
+  width: 30%;
+  margin: 10% auto;
+  height: 25%;
+  position: relative;
+  top: 15%;
+  padding-bottom: 3.5%;
+  background: rgba(230, 220, 220, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 0;
+}
+
+.new-post-error {
+  color: red;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.new-post-form > h1 {
+  margin-bottom: 2%;
+  color: #c23373;
+}
+
+.new-post-form > input {
+  color: #c23373;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid #fe7be5;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #c23373;
+  color: #fe7be5;
+  transition: 1s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #fe7be5;
+  color: #c23373;
+  border: 2px solid #c23373;
+}
+
+@media (max-width: 1536px) {
+  .new-post-form {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .new-post-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .new-post-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .new-post-form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .new-post-form {
+    width: 90%;
+  }
+}

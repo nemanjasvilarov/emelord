@@ -1,0 +1,27 @@
+.user-details-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.details-h1 {
+  color: #c23372;
+}
+
+.details {
+  color: #c23372;
+  text-align: left;
+}
+
+.details-data {
+  color: #e72d77;
+}
+
+@media (max-width: 400px) {
+  .details-h1 {
+    font-size: 1rem;
+  }
+  .details,
+  .details-data {
+    font-size: 0.8rem;
+  }
+}

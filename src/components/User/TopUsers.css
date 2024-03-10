@@ -1,0 +1,76 @@
+.top-users-section {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+.top-users-form {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #c23373, #d53a9d);
+  border-style: solid;
+  border-width: 1px 9px 6px 3px;
+  width: 30%;
+  margin: 0 auto;
+  height: 20%;
+  position: relative;
+  top: 8%;
+  padding-top: 1%;
+  padding-bottom: 3.5%;
+  background: rgba(230, 220, 220, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-users-error {
+  color: red;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.top-users-form > h1 {
+  margin-bottom: 2%;
+  color: #c23373;
+}
+
+.top-users-form > label {
+  margin-right: 0.5%;
+  color: #c23373;
+}
+
+@media (max-width: 1536px) {
+  .top-users-form {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-users-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-users-form {
+    width: 60%;
+  }
+  .top-users-form > h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-users-form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 514px) {
+  .top-users-form {
+    width: 80%;
+    height: 20%;
+    margin-bottom: 4%;
+  }
+  .top-users-section {
+    margin-top: 15%;
+  }
+}

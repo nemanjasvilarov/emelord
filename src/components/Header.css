@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body::after {
+  content: "";
+  background: url("../../public/img/pexels-cloud-bg.jpg") no-repeat center
+    center fixed;
+  opacity: 85%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-size: cover;
+  position: fixed;
+}
+
+#nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c23373;
+  top: 0;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  z-index: 2;
+}
+
+.div-h1-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5%;
+}
+
+.nav-icon {
+  margin: 9% auto;
+}
+.nav-h1,
+.nav-icon {
+  color: #fe7be5;
+}
+
+.nav-h1-II,
+.nav-icon-II {
+  color: #fe7be5;
+  visibility: hidden;
+}
+
+.nav-h1:hover {
+  color: #e1aeff;
+}
+
+#links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+}
+
+.link-style:hover {
+  color: #e1aeff;
+}
+
+.link-style {
+  text-decoration: none;
+  color: #fe7be5;
+}
+
+.nav-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c23373;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .nav-h1 {
+    font-size: 1.5rem;
+  }
+  .div-h1-icon {
+    display: none;
+  }
+  .link-style {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .link-style:hover {
+    background-color: #cf0f65;
+  }
+  .nav-h1-II,
+  .nav-icon-II {
+    visibility: visible;
+  }
+
+  .nav-h1-II {
+    margin-left: 2%;
+  }
+
+  .nav-icon-II {
+    margin-top: 1%;
+    margin-right: 2%;
+  }
+
+  #nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #links {
+    display: none;
+  }
+
+  .nav-menu {
+    visibility: visible;
+  }
+  .nav-menu > #links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+}

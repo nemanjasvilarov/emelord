@@ -1,0 +1,97 @@
+.login-section {
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.login-form {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #c23373, #d53a9d);
+  border-style: solid;
+  border-width: 1px 9px 6px 3px;
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  height: 40%;
+  padding-bottom: 3.5%;
+  background: rgba(230, 220, 220, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-error {
+  color: red;
+  text-align: center;
+  font-size: 1rem;
+  height: 10%;
+  position: relative;
+  top: 2%;
+}
+
+.login-form > h1 {
+  margin-bottom: 2%;
+  color: #c23373;
+}
+
+.login-label {
+  position: relative;
+  top: 15px;
+  color: #c23373;
+  font-weight: bold;
+  margin-right: 1%;
+}
+
+@media (max-width: 1536px) {
+  .login-form {
+    width: 40%;
+    height: 45%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .login-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .login-form {
+    width: 70%;
+    padding-bottom: 0;
+    height: 50%;
+  }
+  .login-error {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-form {
+    width: 80%;
+    padding-bottom: 0;
+  }
+  .login-error {
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-form {
+    height: 55%;
+  }
+  .login-label {
+    display: block;
+    margin-bottom: 4%;
+  }
+  .login-error {
+    margin-top: 5%;
+  }
+}
