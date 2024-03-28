@@ -59,9 +59,12 @@ const Register = () => {
     return (
         <section className="register-section">
             <form className="register-form" onSubmit={handleSubmit(onSubmit)}>
-                <h1>Register</h1>
+                <h1 className="register-form-h1">Register</h1>
                 <label className="register-label" htmlFor="firstName">First name:</label>
                 <TextField
+                    sx={{
+                        '@media(max-width:400px)': { marginTop: '0' }
+                    }}
                     variant="outlined"
                     size="small"
                     type='text'
@@ -80,6 +83,9 @@ const Register = () => {
                     id="lastName"
                     autoComplete='off'
                     margin="dense"
+                    sx={{
+                        '@media(max-width:400px)': { marginTop: '0' }
+                    }}
                     {...register('lastName', { required: 'Last name is required', pattern: { value: /^[A-Z][a-z]{2,23}$/, message: 'Last name can\'t contain numbers  or have a lowercase first letter' } })}
 
                 />
@@ -92,6 +98,9 @@ const Register = () => {
                     id="email"
                     autoComplete='off'
                     margin="dense"
+                    sx={{
+                        '@media(max-width:400px)': { marginTop: '0' }
+                    }}
                     {...register('email', { required: 'Email is required', pattern: { value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, message: 'Email must be valid.' } })}
 
                 />
@@ -104,6 +113,9 @@ const Register = () => {
                     id="username"
                     autoComplete='off'
                     margin="dense"
+                    sx={{
+                        '@media(max-width:400px)': { marginTop: '0' }
+                    }}
                     {...register('username', { required: 'Username is required' })}
 
                 />
@@ -116,6 +128,9 @@ const Register = () => {
                     id="pwdRegister"
                     autoComplete='off'
                     margin="dense"
+                    sx={{
+                        '@media(max-width:400px)': { marginTop: '0' }
+                    }}
                     {...register('password', { required: 'Password is required', minLength: { value: 8, message: 'Password must be at least 8 characters long.' } })}
 
                 />
@@ -128,6 +143,9 @@ const Register = () => {
                     id="matchPassworde"
                     margin="dense"
                     autoComplete='off'
+                    sx={{
+                        '@media(max-width:400px)': { marginTop: '0' }
+                    }}
                     {...register('matchPassword', { required: 'Confirmation password is required' })}
 
                 />
@@ -139,7 +157,7 @@ const Register = () => {
                     ":hover": {
                         backgroundColor: '#FF97C1', color: '#c23373'
                     },
-                    margin: '4% auto'
+                    margin: '1% auto'
                 }} size="medium" variant="contained" disabled={formState.isValid && validPassword ? false : true}>Submit</Button>
             </form>
             {errorMessage ? Array.isArray(errorMessage) ?

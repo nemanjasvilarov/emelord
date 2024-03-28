@@ -53,7 +53,7 @@ const Login = () => {
                     id="username"
                     autoComplete='off'
                     margin="dense"
-                    sx={{ '@media (max-width:900px)': { marginBottom: '4%' } }}
+                    sx={{ '@media (max-width:900px)': { marginBottom: '4%' }, '@media(max-width:400px)': { marginTop: '0' } }}
                     {...register('username', { required: 'Username is required.', type: { value: String, message: 'Username must be a string.' } })}
                 />
                 <p className="login-error">{formState.errors.username ? formState.errors.username.message : ""}</p>
@@ -65,7 +65,7 @@ const Login = () => {
                     id="pwdLogin"
                     autoComplete='off'
                     margin="dense"
-                    sx={{ '@media (max-width:900px)': { marginBottom: '4%' } }}
+                    sx={{ '@media (max-width:900px)': { marginBottom: '4%' }, '@media(max-width:400px)': { marginTop: '0' } }}
                     {...register('password', { required: 'Password is required.', minLength: { value: 8, message: 'Password must be at least 8 characters long.' } })}
                 />
                 <p className="login-error" >{formState.errors.password ? formState.errors.password.message : ""}</p>

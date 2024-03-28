@@ -16,16 +16,6 @@ html {
 }
 
 body {
-  position: relative;
-}
-
-body,
-#app,
-#app > div {
-  min-height: 100%;
-}
-
-body {
   overflow-x: hidden;
   font-family: "Nunito", sans-serif;
 }
