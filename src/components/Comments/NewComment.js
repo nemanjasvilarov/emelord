@@ -27,7 +27,7 @@ const NewComment = (props) => {
 
     return (
         <>
-            {errorMessage?.message && <Alert onClose={closeAlert} variant="filled" severity="error" sx={{ position: 'fixed', width: '100%', top: '5%' }}>{errorMessage.message}</Alert>}
+            {errorMessage?.message && <Alert onClose={closeAlert} variant="filled" severity="error" sx={{ position: 'fixed', width: '100%', top: '4.2%' }}>{errorMessage.message}</Alert>}
             <form className="new-comment-form" onSubmit={handleSubmit(handleUpload)}>
                 <h2>Add a comment</h2>
                 <TextField

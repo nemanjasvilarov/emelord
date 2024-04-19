@@ -54,7 +54,7 @@ const NewPost = () => {
                     marginTop: '3%',
                 }} size="medium" variant="contained" disabled={formState.isValid ? false : true}>Submit picture</Button>
             </form >
-            {errorMessage?.message && <Alert sx={{ position: 'fixed', width: '100%', top: '5%' }} variant="filled" severity="error">{errorMessage.message}</Alert>}
+            {errorMessage?.message && <Alert sx={{ position: 'fixed', width: '100%', top: '4.2%' }} variant="filled" severity="error">{errorMessage.message}</Alert>}
         </section>
     )
 }
