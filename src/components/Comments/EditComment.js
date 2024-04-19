@@ -48,7 +48,7 @@ const EditComment = (props) => {
                     '@media(max-width:900px)': { marginTop: '8%' }
                 }} size="medium" variant="contained" disabled={formState.isValid ? false : true}>Submit</Button>
             </form>
-            {errorMessage?.message ? <Alert onClose={closeAlert} variant="filled" severity="error" sx={{ width: '100%', marginTop: '2%' }}>{errorMessage.message}</Alert> : null}
+            {errorMessage?.message ? <Alert onClose={closeAlert} variant="filled" severity="error" sx={{ position: 'fixed', width: '100%', top: '5%' }}>{errorMessage.message}</Alert> : null}
         </>
     );
 }

@@ -161,14 +161,14 @@ const Register = () => {
                 }} size="medium" variant="contained" disabled={formState.isValid && validPassword ? false : true}>Submit</Button>
             </form>
             {errorMessage ? Array.isArray(errorMessage) ?
-                <Alert onClose={closeAlert} sx={{ minHeight: '5%', width: '40%', position: 'relative', margin: 'auto', '@media (max-width:1536px)': { width: '50%' }, '@media (max-width:1200px)': { width: '60%' }, '@media (max-width:900px)': { width: '70%' }, '@media (max-width:700px)': { width: '75%' } }} variant="filled" severity="error">
+                <Alert onClose={closeAlert} sx={{ position: 'fixed', width: '100%', top: '5%' }} variant="filled" severity="error">
                     {
                         errorMessage.map((err, index) => {
                             return <p style={{ textAlign: 'left' }} key={index} className="error-messages">{err.message}</p>
                         })
                     }
                 </Alert>
-                : <Alert onClose={closeAlert} sx={{ minHeight: '5%', width: '100%', position: 'relative', margin: 'auto', '@media (max-width:1536px)': { top: '50%' }, '@media (max-width:1200px)': { width: '60%' }, '@media (max-width:900px)': { width: '70%' }, '@media (max-width:700px)': { width: '75%' } }} variant="filled" severity="error">{errorMessage.message}</Alert> : null
+                : <Alert onClose={closeAlert} sx={{ position: 'fixed', width: '100%', top: '5%' }} variant="filled" severity="error">{errorMessage.message}</Alert> : null
             }
         </section >
     );

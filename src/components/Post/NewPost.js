@@ -54,7 +54,7 @@ const NewPost = () => {
                     marginTop: '3%',
                 }} size="medium" variant="contained" disabled={formState.isValid ? false : true}>Submit picture</Button>
             </form >
-            {errorMessage?.message && <Alert sx={{ position: 'relative', top: '15%', margin: 'auto', width: '30%', '@media (max-width: 1536px)': { width: '40%' }, '@media (max-width: 1200px)': { width: '50%' }, '@media (max-width: 900px)': { width: '60%' }, '@media (max-width: 700px)': { width: '70%' }, '@media (max-width: 500px)': { width: '90%' } }} variant="filled" severity="error">{errorMessage.message}</Alert>}
+            {errorMessage?.message && <Alert sx={{ position: 'fixed', width: '100%', top: '5%' }} variant="filled" severity="error">{errorMessage.message}</Alert>}
         </section>
     )
 }

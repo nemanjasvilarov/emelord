@@ -79,14 +79,14 @@ const Login = () => {
                 }} size="medium" variant="contained" disabled={formState.isValid ? false : true}>Submit</Button>
             </form>
             {errorMessage ? Array.isArray(errorMessage) ?
-                <Alert onClose={closeAlert} sx={{ position: 'relative', top: '30%', width: '30.8%', margin: 'auto', '@media (max-width:1536px)': { width: '40%' }, '@media (max-width:1200px)': { width: '50%' }, '@media (max-width:900px)': { width: '70%' } }} variant="filled" severity="error">
+                <Alert onClose={closeAlert} sx={{ position: 'fixed', width: '100%', top: '5%' }} variant="filled" severity="error">
                     {
                         errorMessage.map((err, index) => {
                             return <p key={index} style={{ textAlign: 'left' }} className="error-messages">{err.message}</p>
                         })
                     }
                 </Alert>
-                : <Alert onClose={closeAlert} sx={{ position: 'relative', top: '30%', margin: 'auto', width: '30.8%', '@media (max-width:1536px)': { width: '40%' }, '@media (max-width:1200px)': { width: '50%' }, '@media (max-width:900px)': { width: '70%' } }} variant="filled" severity="error">{errorMessage.message}</Alert> : null
+                : <Alert onClose={closeAlert} sx={{ position: 'fixed', width: '100%', top: '5%' }} variant="filled" severity="error">{errorMessage.message}</Alert> : null
             }
         </section >
     );
