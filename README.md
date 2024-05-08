@@ -5,6 +5,7 @@ Emelord is a full stack web application where users can share their favourite ph
 Technologies used to make this API:
 - JavaScript
 - React.js
+- HTML
 - CSS
 
 URL: https://emelord.onrender.com
