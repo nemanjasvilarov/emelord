@@ -27,7 +27,7 @@ const NewComment = (props) => {
 
     return (
         <>
-            {errorMessage?.message && <Alert onClose={closeAlert} variant="filled" severity="error" sx={{ position: 'fixed', width: '100%', top: '4.2%' }}>{errorMessage.message}</Alert>}
+            {errorMessage?.message && <Alert onClose={closeAlert} variant="filled" severity="error" sx={{ position: 'relative', width: '100%', top: '0%' }}>{errorMessage.message}</Alert>}
             <form className="new-comment-form" onSubmit={handleSubmit(handleUpload)}>
                 <h2>Add a comment</h2>
                 <TextField
@@ -37,7 +37,7 @@ const NewComment = (props) => {
                     size="small"
                     id="username"
                     autoComplete='off'
-                    margin="dense" type="text"  {...register('comment', { required: 'Comment is required.' })} />
+                    margin="dense" type="text" {...register('comment', { required: 'Comment is required.' })} />
                 <p className='new-comment-form-error'>{formState.errors.comment && formState.errors.comment.message}</p>
                 <Button type="submit" sx={{
                     color: '#fe7be5',

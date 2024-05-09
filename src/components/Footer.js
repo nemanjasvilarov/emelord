@@ -3,6 +3,6 @@ import './Footer.css'
 
 export default function Footer() {
     return (
-        <div className='Footer'>@Copyright 2024 Nemanja Svilarov</div>
+        <div className='Footer'>Copyright © {new Date().getFullYear()} Nemanja Svilarov</div>
     )
 }

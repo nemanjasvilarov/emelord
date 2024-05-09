@@ -20,7 +20,6 @@ export default function Logout() {
                 navigate('/login', { replace: true });
             } catch (err) {
                 if (err.response.status === 403) {
-                    console.log('403');
                     window.location.reload();
                 } else {
                     setErrorMessage(err.response.data);
